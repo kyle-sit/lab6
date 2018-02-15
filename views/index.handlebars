@@ -25,7 +25,10 @@
 		<div class="jumbotron">
 			<h1>Scott Klemmer</h1>
 			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
-			<p class="facebookLogin">Please login through Facebook</p>
+			<p class="facebookLogin">Please login through Facebook
+				<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+				</fb:login-button>
+			</p>
 		</div>
 
 		<div id="facebookPhoto" class="profile">
@@ -52,5 +55,8 @@
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/introHCI.js"></script>
+
+	{{> facebook}}
+	<script src="/js/facebook.js"></script>
 </body>
 </html>
